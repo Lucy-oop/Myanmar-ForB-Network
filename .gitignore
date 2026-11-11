@@ -1,0 +1,8 @@
+.DS_Store
+# raw source photos (originals / third-party downloads) — the site uses the optimised copies in site/assets/img
+/*.jpg
+/*.jpeg
+/*.png
+/*.webp
+/*.avif
+__pycache__/
