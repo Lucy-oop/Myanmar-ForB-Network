@@ -61,100 +61,104 @@
 
 <main id="main">
 
-  <!-- ============ HERO: full-screen slideshow ============ -->
-  <section class="hero-show" aria-label="Introduction">
-    <img class="hero-show__slide is-active" src="assets/img/children.webp" alt="Smiling children in a circle, looking down at the camera" data-caption="Children of Myanmar" fetchpriority="high">
-    <img class="hero-show__slide" src="assets/img/alms-women.webp" alt="Women carrying alms bowls to a monastery" data-caption="Offering alms" loading="lazy">
-    <img class="hero-show__slide" src="assets/img/monastery.webp" alt="Two monks climbing the steps of a teak monastery" data-caption="Monastic life" loading="lazy">
-    <img class="hero-show__slide" src="assets/img/candles.webp" alt="Hands holding lit candles at dusk" data-caption="Solidarity" loading="lazy">
-
-    <div class="hero-show__inner">
-      <div class="wrap">
-        <div class="hero-show__content">
-          <span class="eyebrow" data-effect="fade">FoRB in Myanmar</span>
-          <h1 class="rise">Freedom of religion or belief, <em>for everyone.</em></h1>
-          <p data-effect="slide-bottom" data-delay="2">Freedom of Religion or Belief is a fundamental human right that encompasses the freedom to adopt, practise, manifest, or change one's religion or belief, individually or collectively, in public or private.</p>
-          <div class="hero__actions" data-effect="slide-bottom" data-delay="3">
-            <a class="btn btn--accent" href="about.html">About the Network</a>
-            <a class="arrow-link" href="#since-the-coup">Since the coup <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          </div>
-        </div>
+  <!-- ============ HERO: text + spinning logo ============ -->
+  <section class="page-hero page-hero--logo" aria-labelledby="page-title">
+    <div class="wrap page-hero__inner">
+      <span class="eyebrow" data-effect="fade">FoRB in Myanmar</span>
+      <h1 class="rise" id="page-title">Freedom of religion or belief, <em>for everyone.</em></h1>
+      <p class="page-hero__lead" data-effect="slide-bottom" data-delay="2">Freedom of Religion or Belief is a fundamental human right that encompasses the freedom to adopt, practise, manifest, or change one's religion or belief, individually or collectively, in public or private.</p>
+      <div class="hero__actions" data-effect="slide-bottom" data-delay="3">
+        <a class="btn btn--accent" href="about.html">About the Network</a>
+        <a class="arrow-link" href="#happening">What is happening <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
-      <div class="hero-show__bar" data-effect="slide-bottom" data-delay="3">
-        <div class="wrap" style="position:relative">
-          <span class="placeholder-flag">Sample data</span>
-          <div class="hstat"><i style="--c:var(--c-red)"></i><b data-stat="leadersKilled">0</b><span>Religious leaders killed since the 2021 coup</span></div>
-          <div class="hstat"><i style="--c:var(--c-orange)"></i><b data-stat="worshipPlacesDamaged">0</b><span>Worship places destroyed and damaged</span></div>
-          <div class="hstat"><i style="--c:var(--c-purple)"></i><b data-stat="leadersProsecuted">0</b><span>Religious leaders illegitimately prosecuted</span></div>
-          <div class="hero-show__ctrl">
-            <div class="hero-show__dots" role="group" aria-label="Choose slide">
-              <button class="is-active" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button><button aria-label="Slide 4"></button>
-            </div>
-            <span class="hero-show__caption" aria-live="polite">Children of Myanmar</span>
-          </div>
-        </div>
+      <div class="hero-logo" aria-hidden="true">
+        <span class="hero-logo__glow"></span>
+        <span class="hero-logo__orbit"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <div class="hero-logo__spin"><svg class="lg" viewBox="-162 -162 324 324" aria-hidden="true" focusable="false"><g class="lg-fig" style="--c:var(--c-purple);--a:-94deg;--i:0"><path fill="var(--c)" d="M8.6 -123.6 5.4 -124.1 2.6 -124.9 -3.4 -124.9 -6.2 -124.2 -9.4 -123.7 -15.9 -121.0 -20.6 -117.9 -26.8 -111.7 -29.2 -107.7 -31.6 -102.7 -32.7 -98.3 -32.9 -96.7 -33.1 -44.0 -32.9 -29.3 -32.6 -27.8 -31.8 -26.5 -29.9 -24.5 -28.2 -23.4 -25.6 -23.0 -23.6 -23.0 -21.4 -23.5 -19.5 -24.5 -18.4 -25.5 -17.5 -27.2 -16.3 -31.8 -16.1 -42.0 -16.6 -45.7 -16.1 -49.3 -16.2 -62.7 -16.1 -79.3 -16.6 -83.7 -16.1 -87.2 -16.6 -90.8 -16.0 -95.8 -15.4 -97.3 -13.5 -100.8 -10.7 -103.7 -7.4 -105.8 -4.2 -106.9 -2.8 -107.1 2.9 -107.0 6.4 -105.8 8.8 -104.5 10.6 -103.0 12.6 -100.8 14.9 -96.2 15.1 -94.5 15.1 -84.8 15.7 -81.3 15.9 -76.7 16.4 -74.3 17.4 -72.5 18.6 -71.3 20.3 -70.4 22.8 -69.4 24.6 -69.3 26.6 -70.0 29.7 -71.6 30.7 -72.7 31.6 -74.5 31.9 -76.8 31.9 -96.3 30.7 -101.5 29.3 -105.3 27.6 -108.7 25.5 -111.8 20.6 -116.9 15.2 -120.9ZM-2.4 -157.9 -4.4 -157.3 -7.6 -155.7 -9.7 -154.0 -11.5 -151.8 -12.6 -150.0 -13.7 -147.2 -13.9 -141.8 -13.4 -140.2 -11.7 -136.7 -10.4 -135.0 -8.4 -133.1 -6.1 -131.7 -2.6 -130.5 -1.2 -130.2 0.6 -130.2 4.6 -131.4 6.4 -132.3 8.7 -134.2 11.1 -136.8 11.8 -138.2 12.8 -141.2 12.9 -147.3 12.5 -148.8 11.4 -151.0 9.7 -153.6 8.4 -154.8 4.9 -156.8 0.8 -157.9Z"/></g><g class="lg-fig" style="--c:var(--c-blue);--a:-34deg;--i:1"><path fill="var(--c)" d="M111.8 -50.8 111.1 -53.2 110.7 -55.5 109.7 -58.3 107.1 -63.7 103.9 -68.5 100.2 -72.2 94.8 -75.7 90.9 -77.5 87.4 -78.7 82.2 -80.0 74.4 -79.9 68.9 -78.4 56.1 -72.0 43.1 -64.1 38.8 -61.8 30.8 -57.0 26.8 -54.9 24.1 -53.1 14.2 -47.5 9.6 -44.3 7.9 -42.6 6.3 -39.3 6.2 -35.7 6.6 -34.2 7.7 -32.2 8.8 -31.0 10.1 -30.1 11.4 -29.5 12.8 -29.2 15.9 -29.2 17.4 -29.5 21.4 -31.4 29.1 -36.1 40.2 -42.3 42.9 -44.1 59.4 -53.4 62.2 -55.2 66.2 -57.3 69.1 -59.1 73.1 -61.2 75.8 -62.1 80.2 -62.2 82.1 -62.0 85.1 -61.0 87.1 -60.1 88.7 -58.8 91.4 -56.2 92.8 -54.3 93.8 -51.5 94.0 -50.2 94.1 -44.3 93.7 -42.5 91.9 -38.0 90.8 -36.5 89.4 -35.1 85.4 -32.3 77.1 -27.5 73.3 -24.8 71.7 -22.3 70.4 -18.5 70.5 -17.5 71.5 -14.5 73.6 -12.1 75.1 -11.1 76.9 -10.4 80.6 -10.3 82.4 -10.9 88.4 -13.9 95.1 -17.9 99.1 -20.7 105.1 -26.8 108.2 -32.5 110.7 -38.0 111.9 -43.0ZM119.8 -85.8 117.9 -84.9 116.4 -83.9 113.6 -81.2 112.3 -79.5 111.4 -77.7 110.2 -74.0 110.1 -72.2 110.4 -70.5 111.5 -67.3 112.7 -65.2 114.8 -62.9 116.6 -61.4 119.8 -59.8 121.4 -59.3 126.6 -59.2 128.4 -59.5 133.1 -61.9 134.8 -63.5 135.9 -65.2 137.4 -68.2 137.8 -69.5 137.9 -74.7 137.6 -76.5 135.9 -80.0 135.0 -81.5 133.7 -82.6 129.9 -85.0 127.9 -85.8 125.4 -86.1 122.8 -86.1Z"/></g><g class="lg-fig" style="--c:var(--c-green);--a:26deg;--i:2"><path fill="var(--c)" d="M121.9 58.1 119.9 58.9 117.1 60.5 115.1 62.2 113.3 64.3 112.4 66.2 111.3 69.5 111.1 71.3 111.2 74.0 112.2 76.7 113.5 78.8 115.4 81.0 117.9 83.1 119.2 83.8 122.1 84.7 127.1 84.7 131.2 83.1 133.7 81.5 135.1 79.8 136.9 77.0 137.8 74.8 137.9 72.5 137.8 68.7 136.6 65.5 135.6 63.3 134.4 61.9 132.7 60.5 130.4 59.2 127.4 58.2 125.2 58.0ZM35.3 -13.6 33.8 -12.3 32.5 -10.8 31.6 -9.0 31.2 -7.5 31.1 -5.7 31.5 -4.2 32.4 -2.3 33.7 -0.8 35.1 0.4 38.4 2.5 88.1 31.7 91.5 35.0 93.3 37.5 94.8 40.8 95.5 44.7 95.6 46.0 94.8 50.0 93.7 52.5 92.4 54.7 90.9 56.5 89.1 58.1 84.8 60.5 83.1 60.9 79.8 61.1 74.9 60.7 68.6 57.5 59.6 51.8 57.4 51.0 54.9 51.0 52.9 51.4 50.9 52.5 49.1 54.3 47.6 56.5 47.2 58.2 47.2 60.7 47.6 62.2 48.6 63.8 51.4 66.5 64.1 74.0 67.4 75.6 74.4 77.8 84.2 77.8 89.2 76.6 92.8 75.4 95.9 73.9 100.8 70.5 105.0 66.3 107.8 62.3 109.6 58.5 111.8 52.3 112.2 44.8 111.8 37.8 109.5 31.8 106.1 25.7 99.9 19.4 95.9 16.5 80.6 7.3 61.9 -3.2 51.2 -9.9 44.1 -13.7 41.4 -14.8 39.8 -15.0 37.9 -14.8Z"/></g><g class="lg-fig" style="--c:var(--c-yellow);--a:86deg;--i:3"><path fill="var(--c)" d="M-3.2 131.2 -5.4 132.2 -7.1 133.5 -10.0 136.5 -11.3 138.7 -12.8 144.3 -11.7 149.2 -10.8 151.0 -9.8 152.5 -7.1 155.3 -5.4 156.5 -2.4 157.6 -0.6 157.9 1.9 157.9 5.4 157.5 7.2 156.7 8.6 155.7 11.4 153.0 12.7 151.3 13.7 149.2 14.8 144.8 14.9 143.7 14.6 142.3 13.5 139.2 12.3 137.0 9.7 134.2 7.6 132.3 5.6 131.4 4.1 131.0 0.4 130.9ZM29.2 23.3 25.4 22.5 21.4 23.4 20.1 24.4 18.8 25.8 17.8 27.5 17.2 29.0 17.0 92.8 16.8 94.3 15.3 98.5 12.8 102.2 11.7 103.4 8.6 105.6 6.8 106.6 1.2 107.8 -4.2 106.7 -8.4 104.7 -10.4 103.0 -12.0 101.0 -13.7 97.7 -14.9 94.0 -15.1 92.2 -15.1 76.7 -15.7 74.8 -16.9 72.7 -18.3 71.2 -19.6 70.4 -23.4 69.3 -24.4 69.3 -27.2 70.3 -28.6 71.1 -30.3 73.0 -31.5 75.2 -31.9 77.5 -31.9 95.2 -30.7 100.3 -28.7 106.2 -24.1 113.2 -20.4 117.0 -18.9 118.3 -15.8 120.4 -11.8 122.4 -8.2 123.6 -3.6 124.7 4.6 124.8 7.1 124.6 13.9 122.3 17.4 120.6 21.1 118.1 26.2 113.2 27.8 111.0 31.5 103.8 32.7 100.2 33.9 94.7 33.9 31.2 33.7 29.5 32.4 26.2 30.9 24.4Z"/></g><g class="lg-fig" style="--c:var(--c-orange);--a:146deg;--i:4"><path fill="var(--c)" d="M-125.9 59.3 -129.1 60.3 -130.6 61.2 -133.4 63.4 -135.3 66.0 -136.4 68.2 -136.8 69.7 -137.0 73.0 -136.7 76.7 -136.0 78.3 -134.0 81.3 -131.6 83.7 -129.4 85.1 -127.8 85.7 -125.1 86.0 -121.9 86.0 -118.9 85.6 -116.9 84.8 -115.2 83.6 -112.3 80.7 -111.1 78.8 -110.4 77.2 -110.1 75.8 -110.0 72.7 -110.3 68.8 -111.4 66.2 -112.9 63.7 -114.3 62.4 -117.9 60.2 -121.2 59.1 -123.9 59.0ZM-110.9 52.3 -108.8 59.2 -105.4 65.7 -103.9 67.5 -100.1 71.3 -96.1 74.2 -90.6 77.0 -84.8 78.7 -76.8 79.0 -72.1 78.7 -67.6 77.6 -64.8 76.6 -59.1 73.9 -53.6 70.4 -46.4 66.4 -25.9 54.4 -20.6 51.6 -10.8 45.7 -7.9 43.4 -6.7 42.0 -5.3 38.8 -5.2 36.5 -5.7 34.8 -6.8 32.5 -7.9 31.1 -9.1 30.1 -10.4 29.4 -11.8 29.1 -14.6 29.0 -16.2 29.3 -18.2 30.2 -31.8 38.0 -34.6 39.4 -42.0 44.1 -44.0 45.6 -51.2 49.2 -59.9 54.5 -64.1 56.6 -72.1 61.3 -77.8 62.7 -79.9 62.5 -84.5 61.7 -88.8 58.6 -90.9 56.5 -91.9 55.0 -92.8 53.0 -93.9 49.0 -94.0 44.8 -93.8 43.5 -92.3 39.3 -91.2 37.7 -89.4 35.7 -86.9 33.5 -83.4 31.2 -76.8 27.7 -73.4 25.6 -71.8 24.0 -70.5 21.7 -70.1 19.5 -70.1 16.7 -70.7 14.7 -71.7 12.9 -73.4 11.3 -75.6 10.3 -77.2 10.0 -80.1 10.1 -81.9 10.7 -90.1 15.1 -96.7 19.5 -101.7 23.4 -105.2 27.8 -107.4 31.8 -109.3 35.7 -110.7 40.2 -110.9 42.2Z"/></g><g class="lg-fig" style="--c:var(--c-red);--a:-154deg;--i:5"><path fill="var(--c)" d="M-99.1 -71.3 -104.1 -66.5 -105.7 -64.5 -108.3 -59.5 -110.4 -55.0 -111.8 -49.7 -111.9 -40.8 -110.7 -35.8 -108.9 -31.2 -105.1 -24.8 -99.8 -19.4 -95.8 -16.6 -89.6 -13.4 -71.6 -2.5 -66.9 -0.0 -49.8 10.4 -42.9 14.3 -41.1 14.8 -37.4 14.7 -35.8 14.2 -33.8 13.0 -31.6 10.7 -30.3 6.7 -30.4 5.5 -31.4 2.7 -32.6 0.9 -39.6 -3.8 -49.1 -9.1 -56.6 -13.8 -68.1 -20.2 -73.4 -23.7 -88.9 -32.8 -90.5 -34.3 -93.1 -38.2 -93.8 -40.0 -94.9 -44.5 -94.9 -46.5 -93.9 -50.2 -91.9 -54.2 -90.7 -55.8 -88.7 -57.7 -85.4 -59.8 -81.2 -61.1 -76.1 -61.0 -72.4 -59.8 -69.8 -58.5 -61.4 -53.4 -58.1 -51.7 -55.9 -51.1 -53.1 -51.1 -51.6 -51.5 -50.3 -52.4 -48.2 -54.5 -47.3 -56.0 -46.3 -58.8 -46.3 -59.8 -47.3 -63.2 -47.9 -64.3 -49.3 -65.6 -52.1 -67.5 -62.9 -73.6 -67.6 -75.7 -75.2 -77.9 -83.1 -78.0 -88.1 -76.8 -94.6 -74.2ZM-127.1 -84.8 -131.9 -82.4 -134.1 -80.5 -135.6 -78.7 -137.0 -76.0 -137.8 -74.0 -137.9 -70.7 -137.7 -68.7 -136.5 -65.5 -135.0 -63.0 -133.7 -61.4 -132.1 -60.2 -129.1 -58.7 -127.8 -58.3 -121.8 -58.2 -119.9 -58.4 -116.9 -59.7 -114.8 -61.0 -113.3 -62.5 -111.6 -65.3 -110.2 -70.5 -111.3 -76.2 -112.2 -78.2 -113.2 -79.7 -115.4 -81.9 -117.1 -83.0 -119.9 -84.4 -121.4 -84.9 -125.4 -85.0Z"/></g></svg></div>
       </div>
     </div>
+    <div class="page-hero__band" aria-hidden="true"></div>
   </section>
 
-  <!-- ============ STORY: sticky photo + statements ============ -->
-  <section class="story-sec">
-    <div class="wrap story">
-      <div class="story__media" aria-hidden="true">
-        <img data-step="0" class="active" src="assets/img/bagan-temples.webp" alt="">
-        <img data-step="1" src="assets/img/monastery.webp" alt="">
-        <img data-step="2" src="assets/img/mosque.webp" alt="" style="object-position:center 25%">
-        <img data-step="3" src="assets/img/children.webp" alt="">
-        <span class="story__count">FoRB IN MYANMAR</span>
-      </div>
-      <div class="story__steps">
-        <div class="story__step current" data-step="0">
-          <img class="story__thumb" src="assets/img/bagan-temples.webp" alt="" loading="lazy">
-          <span class="story__num">01 / 04</span>
-          <h2 class="statement">The right to freedom of religion or belief is a crucially <mark>universal and fundamental</mark> human right.</h2>
-        </div>
-        <div class="story__step" data-step="1">
-          <img class="story__thumb" src="assets/img/monastery.webp" alt="" loading="lazy">
-          <span class="story__num">02 / 04</span>
-          <h2 class="statement">In Myanmar, it has remained difficult to realise for decades.</h2>
-        </div>
-        <div class="story__step" data-step="2">
-          <img class="story__thumb" src="assets/img/mosque.webp" alt="" loading="lazy">
-          <span class="story__num">03 / 04</span>
-          <h2 class="statement">Religious minorities face discrimination, insecurity, and restrictions on practising their faith freely.</h2>
-        </div>
-        <div class="story__step" data-step="3">
-          <img class="story__thumb" src="assets/img/children.webp" alt="" loading="lazy">
-          <span class="story__num">04 / 04</span>
-          <h2 class="statement"><strong>We work to protect it — for everyone.</strong></h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FoRB IN MYANMAR: overlap + timeline + challenges ============ -->
-  <section class="section section--white">
+  <!-- ============ NUMBERS ============ -->
+  <section class="numrow" aria-labelledby="num-title">
     <div class="wrap">
-      <div class="overlap">
-        <figure class="overlap__img" data-effect="mask">
-          <img src="assets/img/monastery.webp" alt="Two monks climbing the steps of an ornate teak monastery" loading="lazy">
-          <span class="img-badge"><b>1948</b><small>Decades of conflict since independence</small></span>
-        </figure>
-        <div class="overlap__card" data-effect="slide-right" data-delay="2">
-          <span class="eyebrow">FoRB in Myanmar</span>
-          <h2 class="rise">A right challenged by decades of conflict</h2>
-          <blockquote class="pull">The enjoyment of this fundamental right has been increasingly challenged by decades of armed conflict, structural discrimination, religious intolerance, and restrictions on fundamental freedoms.</blockquote>
-          <p>Religious minorities, particularly in <strong>conflict-affected areas</strong>, face <strong>discrimination, insecurity and restrictions</strong> on practising their faith freely.</p>
+      <div class="numrow__head">
+        <h2 id="num-title">FoRB violations since the 2021 coup <span class="placeholder-flag">Sample data</span></h2>
+        <a class="arrow-link" href="about.html#data" style="color:#fff">See the full data <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="numrow__grid">
+        <div class="num" style="--c:var(--c-red)">
+          <b data-stat="leadersKilled">0</b>
+          <h3>Religious leaders killed</h3>
+          <p>since the 2021 coup, in deaths directly or implicitly associated with the conflict.</p>
         </div>
+        <div class="num" style="--c:var(--c-orange)">
+          <b data-stat="worshipPlacesDamaged">0</b>
+          <h3>Worship places destroyed and damaged</h3>
+          <p>since the 2021 coup: churches, monasteries, mosques and other religious buildings.</p>
+        </div>
+        <div class="num" style="--c:var(--c-purple)">
+          <b data-stat="leadersProsecuted">0</b>
+          <h3>Religious leaders illegitimately prosecuted</h3>
+          <p>since the 2021 coup, after abduction or arrest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENTS (text only) ============ -->
+  <section class="prologue">
+    <div class="wrap">
+      <div class="prologue__row prologue__row--left"><p class="statement">The right to freedom of religion or belief is a crucially <mark>universal and fundamental</mark> human right.</p></div>
+      <div class="prologue__row prologue__row--center"><p class="statement">In Myanmar, it has remained difficult to realise for decades.</p></div>
+      <div class="prologue__row prologue__row--right"><p class="statement">Religious minorities face discrimination, insecurity, and restrictions on practising their faith freely.</p></div>
+      <div class="prologue__row prologue__row--left"><p class="statement"><strong>We work to protect it, for everyone.</strong></p></div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IS HAPPENING ============ -->
+  <section class="section section--white" id="happening">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" data-effect="fade">FoRB in Myanmar</span>
+        <h2 class="rise">What is happening in Myanmar regarding FoRB</h2>
+      </div>
+      <div class="split split--top">
+        <div class="happening-text">
+          <p class="lead">Myanmar is home to diverse religious, ethnic, and cultural communities, where Buddhism, Christianity, Islam, Hinduism, and indigenous spiritual traditions coexist. According to the 2014 national census, 89.8% of the total population practices Buddhism, followed by Christianity with 6.3%, Islam with 2.3%, animism with 0.8%, and Hinduism with 0.5%.</p>
+          <div class="census" role="figure" aria-label="Religious composition of Myanmar, 2014 census: Buddhism 89.8%, Christianity 6.3%, Islam 2.3%, Animism 0.8%, Hinduism 0.5%">
+            <div class="census-bar" aria-hidden="true">
+              <span style="--w:89.8%;background:var(--c-orange)"></span>
+              <span style="--w:6.3%;background:var(--c-blue)"></span>
+              <span style="--w:2.3%;background:var(--c-green)"></span>
+              <span style="--w:0.8%;background:var(--c-purple)"></span>
+              <span style="--w:0.5%;background:var(--c-red)"></span>
+            </div>
+            <ul class="census-legend" aria-hidden="true">
+              <li><i style="background:var(--c-orange)"></i>Buddhism <b>89.8%</b></li>
+              <li><i style="background:var(--c-blue)"></i>Christianity <b>6.3%</b></li>
+              <li><i style="background:var(--c-green)"></i>Islam <b>2.3%</b></li>
+              <li><i style="background:var(--c-purple)"></i>Animism <b>0.8%</b></li>
+              <li><i style="background:var(--c-red)"></i>Hinduism <b>0.5%</b></li>
+            </ul>
+            <p class="census-note">Source: 2014 national census.</p>
+          </div>
+          <p>Myanmar has often experienced communal violence based on religion or ethnicity since before the 1948 Independence, and the successive governments and military regimes have weaponised Buddhism to take advantage. After precarious democratisation from 2011 to 2020, the Myanmar military, the Tatmadaw as it describes itself, staged the latest coup on 1 February 2021.</p>
+        </div>
+        <figure class="cloud-card" data-effect="slide-right">
+          <img src="assets/img/word-cloud.webp" alt="Word cloud: religious freedom, state, government, international, human rights, protect, people, violations" width="1600" height="674" loading="lazy">
+          <figcaption>Religious freedom, in words</figcaption>
+        </figure>
       </div>
 
       <ol class="tl-strip" aria-label="Key moments">
         <li style="--c:var(--c-purple)"><b>1948</b><span>Independence. Communal violence based on religion or ethnicity predates it.</span></li>
         <li style="--c:var(--c-blue)"><b>2011–2020</b><span>A precarious period of democratisation.</span></li>
         <li style="--c:var(--c-red)"><b>1 Feb 2021</b><span>Military coup. FoRB violations escalate sharply.</span></li>
-        <li style="--c:var(--c-green)"><b>Today</b><span>The Network documents, advocates and builds solidarity.</span></li>
+        <li style="--c:var(--c-green)"><b>Today</b><span>The Network documents, advocates and raises awareness.</span></li>
       </ol>
-
+      <div class="challenges-head" data-effect="fade"><span class="eyebrow">Key challenges</span></div>
       <div class="challenges">
         <article class="challenge" style="--c:var(--c-red)" data-effect="slide-bottom">
           <span class="challenge__num">01</span>
@@ -180,45 +184,6 @@
     </div>
   </section>
 
-  <!-- ============ DIVERSITY: text + collage ============ -->
-  <section class="section">
-    <div class="wrap split">
-      <div>
-        <span class="eyebrow" data-effect="fade">Many faiths, one country</span>
-        <h2 class="rise">Home to diverse religious, ethnic and cultural communities</h2>
-        <div data-effect="slide-bottom">
-          <p>Myanmar is home to diverse religious, ethnic, and cultural communities, where Buddhism, Christianity, Islam, Hinduism, and indigenous spiritual traditions coexist.</p>
-          <p>Myanmar has often experienced communal violence based on religion or ethnicity since before the 1948 Independence, and the successive governments and military regimes have weaponised Buddhism to take advantage. After precarious democratisation from 2011 to 2020, the Myanmar military, the Tatmadaw as it describes itself, staged the latest coup on 1 February 2021.</p>
-        </div>
-        <div class="census" role="figure" aria-label="Religious composition of Myanmar, 2014 census: Buddhism 89.8%, Christianity 6.3%, Islam 2.3%, Animism 0.8%, Hinduism 0.5%">
-          <div class="census-bar" aria-hidden="true">
-            <span style="--w:89.8%;background:var(--c-orange)"></span>
-            <span style="--w:6.3%;background:var(--c-blue)"></span>
-            <span style="--w:2.3%;background:var(--c-green)"></span>
-            <span style="--w:0.8%;background:var(--c-purple)"></span>
-            <span style="--w:0.5%;background:var(--c-red)"></span>
-          </div>
-          <ul class="census-legend" aria-hidden="true">
-            <li><i style="background:var(--c-orange)"></i>Buddhism <b>89.8%</b></li>
-            <li><i style="background:var(--c-blue)"></i>Christianity <b>6.3%</b></li>
-            <li><i style="background:var(--c-green)"></i>Islam <b>2.3%</b></li>
-            <li><i style="background:var(--c-purple)"></i>Animism <b>0.8%</b></li>
-            <li><i style="background:var(--c-red)"></i>Hinduism <b>0.5%</b></li>
-          </ul>
-          <p class="census-note">Source: 2014 national census.</p>
-        </div>
-      </div>
-      <div class="mosaic collage">
-        <figure class="tall" data-effect="slide-bottom"><img src="assets/img/pagoda-gate.webp" alt="An ornate pagoda gateway" loading="lazy"><figcaption>Buddhism</figcaption></figure>
-        <figure data-effect="slide-bottom" data-delay="1"><img src="assets/img/cathedral.webp" alt="A red-brick cathedral" loading="lazy" style="object-position:center 30%"><figcaption>Christianity</figcaption></figure>
-        <figure data-effect="slide-bottom" data-delay="2"><img src="assets/img/mosque.webp" alt="A white mosque with minarets" loading="lazy" style="object-position:center 25%"><figcaption>Islam</figcaption></figure>
-        <figure class="wide" data-effect="slide-bottom" data-delay="1"><img src="assets/img/bagan-temples.webp" alt="Temples of Bagan among green trees" loading="lazy"><figcaption>Heritage</figcaption></figure>
-        <figure data-effect="slide-bottom" data-delay="2"><img src="assets/img/novice-monks.webp" alt="Young novice monks walking with dogs" loading="lazy"><figcaption>Monastic life</figcaption></figure>
-        <figure data-effect="slide-bottom" data-delay="3"><img src="assets/img/bagan-balloons.webp" alt="Balloons over the pagodas of Bagan" loading="lazy"><figcaption>Bagan</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ SINCE THE COUP ============ -->
   <section class="section section--dark dotted" id="since-the-coup">
     <div class="wrap">
@@ -226,10 +191,10 @@
         <div>
           <span class="eyebrow" data-effect="fade">Since 1 February 2021</span>
           <h2 class="rise">Religious freedom has deteriorated significantly</h2>
-          <p class="lead" data-effect="slide-bottom">The expansion of armed conflict, military operations, airstrikes, displacement, and the destruction of civilian infrastructure have had <strong>devastating consequences for religious communities</strong>.</p>
+          <p class="lead" data-effect="slide-bottom">Since the coup, the situation of human rights and religious freedom in Myanmar has deteriorated significantly. The expansion of armed conflict, military operations, airstrikes, displacement, and the destruction of civilian infrastructure have had <strong>devastating consequences for religious communities</strong>.</p>
         </div>
-        <figure class="figure coup-photo" data-effect="mask">
-          <img src="assets/img/bagan-sunset.webp" alt="Silhouettes of pagodas against a hazy sunset" loading="lazy">
+        <figure class="figure coup-photo coup-photo--soft" data-effect="mask">
+          <img src="assets/img/faiths-prayer.webp" alt="Silhouettes of people of many faiths praying at sunrise beneath religious symbols" width="1029" height="514" loading="lazy">
           <span class="pulse-badge"><i aria-hidden="true"></i>1 Feb 2021 · Military coup</span>
         </figure>
       </div>
@@ -238,7 +203,7 @@
         <article class="impact" style="--c:var(--c-red)" data-effect="slide-bottom">
           <span class="impact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-3-1-5 0-7z"/></svg></span>
           <h3>Airstrikes &amp; military operations</h3>
-          <p>Expanding armed conflict and the destruction of civilian infrastructure.</p>
+          <p>The expansion of armed conflict and the destruction of civilian infrastructure.</p>
         </article>
         <article class="impact" style="--c:var(--c-orange)" data-effect="slide-bottom" data-delay="1">
           <span class="impact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h6"/><path d="M15 17h7M19 14l3 3-3 3"/></svg></span>
@@ -248,17 +213,17 @@
         <article class="impact" style="--c:var(--c-purple)" data-effect="slide-bottom" data-delay="2">
           <span class="impact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V11l7-5 7 5v10"/><path d="M12 2v4"/><path d="M10 21v-5h4v5"/></svg></span>
           <h3>Places of worship hit</h3>
-          <p>Churches, monasteries and mosques damaged, destroyed, occupied or used for military purposes.</p>
+          <p>Churches, monasteries, mosques, and other religious buildings have been damaged, destroyed, occupied, or used for military purposes.</p>
         </article>
         <article class="impact" style="--c:var(--c-blue)" data-effect="slide-bottom" data-delay="3">
           <span class="impact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a5 5 0 0 1 9-3"/><path d="M15 12v9M19 12v9M14 12h6M14 21h6"/></svg></span>
           <h3>Faith leaders targeted</h3>
-          <p>Religious leaders, clergy and believers subjected to arrest, violence, intimidation and killings.</p>
+          <p>Religious leaders, clergy, and members of faith communities have also been subjected to arrest, violence, intimidation, and killings.</p>
         </article>
       </div>
 
       <div class="coup-foot" data-effect="slide-bottom">
-        <p class="statement-lg">Restrictions and prohibition of legitimate FoRB practices have been increasing, along with the <mark>resurrection of state-sponsored ethnocentricism</mark>, further <mark>limiting the ability of communities to document violations and seek protection</mark>.</p>
+        <p class="statement-lg">Restrictions and prohibition of legitimate FoRB practices have been increasing, along with the <mark>resurrection of state-sponsored ethnocentricism</mark>. These violations have occurred alongside broader restrictions on freedom of expression, association, peaceful assembly, and access to information, further <mark>limiting the ability of communities to document violations and seek protection</mark>.</p>
         <a class="arrow-link" href="about.html#data">See the full data <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
     </div>
@@ -267,11 +232,14 @@
   <!-- ============ OUR RESPONSE ============ -->
   <section class="section dotted response" style="background-color:var(--paper)">
     <div class="wrap">
-      <div class="split" style="margin-bottom:72px">
+      <div class="split" style="margin-bottom:80px">
         <div>
           <span class="eyebrow" data-effect="fade">Our response</span>
-          <h2 class="rise">The Myanmar FoRB Network was established after the 2021 military coup.</h2>
-          <p class="lead" data-effect="slide-bottom" style="margin:0">It strengthens cooperation among <strong>civil society organisations, human rights defenders, and individuals</strong> working to promote and protect religious freedom.</p>
+          <h2 class="rise">A network established after the 2021 military coup</h2>
+          <div data-effect="slide-bottom">
+            <p class="lead">In response to these challenges, the Myanmar Freedom of Religion or Belief (FoRB) Network was established after the 2021 military coup to strengthen cooperation among <strong>civil society organisations, human rights defenders, and individuals</strong> working to promote and protect religious freedom.</p>
+            <p style="margin:0">Through documentation, research, advocacy, capacity-building, and collective engagement, Myanmar FoRB Network seeks to raise awareness of FoRB violations, amplify the voices of affected communities, and promote accountability for human rights abuses.</p>
+          </div>
         </div>
         <div class="facts stagger" data-effect="slide-bottom">
           <div><b><span data-count="2021" data-from="2000">2021</span></b><span>Established shortly after the February 2021 coup</span></div>
@@ -281,42 +249,54 @@
         </div>
       </div>
 
-      <div class="oblock" style="--c:var(--c-blue)">
-        <h3 class="oblock__title rise">We <span class="verb">document</span></h3>
-        <figure class="figure oblock__img" data-effect="mask"><img src="assets/img/documents.webp" alt="A stack of papers and files" loading="lazy"><span class="oblock__badge">01</span></figure>
-        <div class="oblock__body" data-effect="slide-bottom" data-delay="1">
-          <span class="oblock__num">01 — DOCUMENTATION &amp; RESEARCH</span>
-          <p>Through documentation and research, we raise awareness of <strong>FoRB violations since the February 2021 coup</strong>.</p>
-          <ul class="checklist">
-            <li>Deaths of faith leaders</li><li>Abduction, arrest &amp; prosecution of faith leaders</li><li>Damage and destruction of places of worship</li><li>State restriction of FoRB practices</li><li>Social hostility &amp; harmful hate speech</li><li>Trend and pattern analysis</li>
-          </ul>
-        </div>
-      </div>
+      <figure class="members__band org-band" data-effect="mask">
+        <img src="assets/img/org-session.webp" alt="A Myanmar FoRB Network session: a speaker addresses participants, including Buddhist monks" width="1400" height="1050" loading="lazy">
+        <figcaption>
+          <span class="eyebrow">The Network at work</span>
+          <h2>Faith leaders and advocates, working together.</h2>
+        </figcaption>
+      </figure>
 
-      <div class="oblock oblock--right" style="--c:var(--c-green)">
-        <h3 class="oblock__title rise">We <span class="verb">advocate</span></h3>
-        <figure class="figure oblock__img" data-effect="mask"><img src="assets/img/community-walk.webp" alt="A group of people walking together along a rural road" loading="lazy"><span class="oblock__badge">02</span></figure>
-        <div class="oblock__body" data-effect="slide-bottom" data-delay="1">
-          <span class="oblock__num">02 — ADVOCACY &amp; ENGAGEMENT</span>
-          <p>We amplify the voices of affected communities and promote <strong>accountability at regional and international levels</strong>.</p>
-          <ul class="checklist">
-            <li>UN Special Rapporteur on Myanmar</li><li>UN Special Rapporteur on FoRB</li><li>Regional &amp; international conferences</li><li>Coordination with national stakeholders</li>
-          </ul>
+      <div class="section-head" style="text-align:center;margin-left:auto;margin-right:auto">
+        <span class="eyebrow" data-effect="fade">What we do</span>
+        <h2 class="rise">How we work</h2>
+      </div>
+      <div class="hww">
+        <div style="--c:var(--c-blue)" data-effect="slide-bottom">
+          <div class="hww__card">
+            <span class="hww__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+            <h3>Document</h3>
+            <p>violations of FoRB since the February 2021 coup.</p>
+          </div>
+          <div class="hww__body">
+            <p>We record what happens to faith leaders, places of worship and faith minorities, and analyse the trends and patterns.</p>
+            <ul class="checklist"><li>Deaths of faith leaders</li><li>Abduction, arrest &amp; prosecution</li><li>Damage to places of worship</li><li>State restrictions &amp; hate speech</li></ul>
+          </div>
+        </div>
+        <div style="--c:var(--c-green)" data-effect="slide-bottom" data-delay="1">
+          <div class="hww__card">
+            <span class="hww__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></span>
+            <h3>Advocate</h3>
+            <p>for FoRB at the regional and international level.</p>
+          </div>
+          <div class="hww__body">
+            <p>We present our findings at conferences and report FoRB violations to UN mechanisms.</p>
+            <ul class="checklist"><li>UN Special Rapporteur on Myanmar</li><li>UN Special Rapporteur on FoRB</li><li>Regional &amp; international conferences</li><li>National stakeholders</li></ul>
+          </div>
+        </div>
+        <div style="--c:var(--c-orange)" data-effect="slide-bottom" data-delay="2">
+          <div class="hww__card">
+            <span class="hww__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span>
+            <h3>Raise awareness</h3>
+            <p>of FoRB among the public and fellow advocates.</p>
+          </div>
+          <div class="hww__body">
+            <p>We run public webinars on special days and regular technical and thematic sessions.</p>
+            <ul class="checklist"><li>International Religious Freedom Day</li><li>Survivor-centred documentation</li><li>Blasphemy vs. dangerous hate speech</li><li>Knowledge-sharing &amp; training</li></ul>
+          </div>
         </div>
       </div>
-
-      <div class="oblock oblock--center" style="--c:var(--c-orange)">
-        <h3 class="oblock__title rise">We <span class="verb">strengthen</span></h3>
-        <figure class="figure oblock__img" data-effect="mask"><img src="assets/img/solidarity-hands.webp" alt="Hands joined together in solidarity" loading="lazy"><span class="oblock__badge">03</span></figure>
-        <div class="oblock__body" data-effect="slide-bottom" data-delay="1">
-          <span class="oblock__num">03 — CAPACITY-BUILDING</span>
-          <p>We equip members and partners to document violations in an <strong>ethical, systematic and survivor-centred</strong> way.</p>
-          <ul class="checklist" style="grid-template-columns:1fr">
-            <li>Knowledge-sharing sessions</li><li>Skill-building training for members</li><li>Raising awareness of FoRB</li>
-          </ul>
-          <a class="arrow-link" href="about.html#what-we-do" style="margin-top:24px">Show me more <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        </div>
-      </div>
+      <p style="text-align:center;margin:44px 0 0"><a class="arrow-link" href="about.html#what-we-do">Show me more <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></p>
     </div>
   </section>
 
@@ -351,8 +331,8 @@
   <div class="wrap newsletter__grid">
     <div>
       <span class="eyebrow">Newsletter</span>
-      <h2 id="nl-title" class="rise">Subscribe to <em class="hl">FoRB Media Watch</em></h2>
-      <p data-effect="slide-bottom">Regular updates on freedom of religion or belief in Myanmar, delivered automatically to your inbox: violations documented, media monitoring, new reports and statements from the Network.</p>
+      <h2 id="nl-title" class="rise">Subscribe to <em class="hl">FoRB Network</em></h2>
+      <p data-effect="slide-bottom">Regular updates from the Myanmar FoRB Network, delivered to your inbox: the FoRB situation in Myanmar, violations documented, new reports, events and statements from the Network.</p>
     </div>
     <form class="nl-form" data-effect="slide-bottom" action="" method="post" target="_blank" novalidate>
       <div class="nl-row">
@@ -366,7 +346,7 @@
         </div>
       </div>
       <div class="nl-hp" aria-hidden="true"><input type="text" name="b_hp" tabindex="-1" value="" autocomplete="off"></div>
-      <label class="check"><input type="checkbox" name="consent" required> <span>I agree to receive the FoRB Media Watch newsletter. I can unsubscribe at any time using the link in every email. *</span></label>
+      <label class="check"><input type="checkbox" name="consent" required> <span>I agree to receive the FoRB Network newsletter. I can unsubscribe at any time using the link in every email. *</span></label>
       <div class="nl-actions">
         <button class="btn" type="submit">Subscribe <span aria-hidden="true">→</span></button>
         <small>We never share your email. You can use a pseudonym.</small>
@@ -380,7 +360,7 @@
   <div class="wrap">
     <div class="footer-top">
       <span class="hashtag">#FreedomIsOurFaith</span>
-      <a class="arrow-link" href="#newsletter">Subscribe to Media Watch <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="arrow-link" href="#newsletter">Subscribe to FoRB Network <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
     <div class="footer-grid">
       <div>

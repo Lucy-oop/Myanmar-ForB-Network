@@ -6,6 +6,10 @@ OUT = sys.argv[1]
 NAV = [("index.html", "Home"), ("about.html", "About Us"), ("insights.html", "Insights"),
        ("learning.html", "FoRB Learning"), ("contact.html", "Contact Us")]
 
+# Vector logo mark (6 figures as separate groups, for the hero "gathering" animation).
+# Generated from assets/img/logo-mark.png by _build/trace_logo.py.
+HERO_LOGO = open(os.path.join(GEN, "hero-logo.svg"), encoding="utf-8").read().strip()
+
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 
 def head(title, desc, og_img):
@@ -84,8 +88,8 @@ NEWSLETTER = f'''
   <div class="wrap newsletter__grid">
     <div>
       <span class="eyebrow">Newsletter</span>
-      <h2 id="nl-title" class="rise">Subscribe to <em class="hl">FoRB Media Watch</em></h2>
-      <p data-effect="slide-bottom">Regular updates on freedom of religion or belief in Myanmar, delivered automatically to your inbox: violations documented, media monitoring, new reports and statements from the Network.</p>
+      <h2 id="nl-title" class="rise">Subscribe to <em class="hl">FoRB Network</em></h2>
+      <p data-effect="slide-bottom">Regular updates from the Myanmar FoRB Network, delivered to your inbox: the FoRB situation in Myanmar, violations documented, new reports, events and statements from the Network.</p>
     </div>
     <form class="nl-form" data-effect="slide-bottom" action="{NEWSLETTER_ACTION}" method="post" target="_blank" novalidate>
       <div class="nl-row">
@@ -99,7 +103,7 @@ NEWSLETTER = f'''
         </div>
       </div>
       <div class="nl-hp" aria-hidden="true"><input type="text" name="b_hp" tabindex="-1" value="" autocomplete="off"></div>
-      <label class="check"><input type="checkbox" name="consent" required> <span>I agree to receive the FoRB Media Watch newsletter. I can unsubscribe at any time using the link in every email. *</span></label>
+      <label class="check"><input type="checkbox" name="consent" required> <span>I agree to receive the FoRB Network newsletter. I can unsubscribe at any time using the link in every email. *</span></label>
       <div class="nl-actions">
         <button class="btn" type="submit">Subscribe <span aria-hidden="true">→</span></button>
         <small>We never share your email. You can use a pseudonym.</small>
@@ -115,7 +119,7 @@ FOOTER = NEWSLETTER + f'''
   <div class="wrap">
     <div class="footer-top">
       <span class="hashtag">#FreedomIsOurFaith</span>
-      <a class="arrow-link" href="#newsletter">Subscribe to Media Watch <span class="ar">{ARROW}</span></a>
+      <a class="arrow-link" href="#newsletter">Subscribe to FoRB Network <span class="ar">{ARROW}</span></a>
     </div>
     <div class="footer-grid">
       <div>
@@ -171,7 +175,7 @@ PAGES = {
 
 for page, (title, desc, og, data) in PAGES.items():
     body = open(os.path.join(GEN, "pages", page), encoding="utf-8").read()
-    body = body.replace("{{ARROW}}", ARROW)
+    body = body.replace("{{ARROW}}", ARROW).replace("{{HERO_LOGO}}", HERO_LOGO)
     scripts = ('<script src="assets/js/data.js"></script>\n' if data else '') + '<script src="assets/js/main.js"></script>\n</body>\n</html>\n'
     html = head(title, desc, og) + header(page) + '\n<main id="main">\n' + body + '\n</main>\n' + FOOTER + scripts
     open(os.path.join(OUT, page), "w", encoding="utf-8").write(html)

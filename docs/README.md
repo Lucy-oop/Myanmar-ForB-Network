@@ -6,8 +6,8 @@ Open `index.html` in a browser, or upload the whole `site/` folder to any static
 ## Pages
 | File | Page |
 |---|---|
-| `index.html` | Home: FoRB in Myanmar, census, faiths, post-coup stats, our response, vision |
-| `about.html` | About Us: data and charts, about the network, vision, what we do, sustainability, members |
+| `index.html` | Home: logo hero, violation numbers, what is happening in Myanmar regarding FoRB (census), since the coup, our response / how we work, vision |
+| `about.html` | About Us: about the network + Myanmar map, what we do (3 panels), data and charts, vision, Stefanus Prize & network developments, members |
 | `insights.html` | Insights: featured report and filterable list (**sample content**) |
 | `learning.html` | FoRB Learning: key concepts, international standards, modules (**sample modules**) |
 | `contact.html` | Contact Us: contact details (**to confirm**), safety notice, form |
@@ -16,13 +16,14 @@ Open `index.html` in a browser, or upload the whole `site/` folder to any static
 1. **Data.** Put the real figures in `assets/js/data.js`, set `isPlaceholder: false`, then delete the demo block at the bottom of that file. The yellow "Sample data" flags on the stats disappear automatically.
 2. **Insights and Learning cards.** Replace the sample items with real publications and modules, and remove the "Sample content" flags.
 3. **Contact form.** No public email address is shown, at the client's request. The form still needs a backend that forwards messages privately, for example Formspree or Netlify Forms. It is front-end only right now: see the `TODO` in `assets/js/main.js`.
-3b. **Newsletter (FoRB Media Watch).** The sign-up section sits above the footer on every page (`#newsletter`). To make it live:
+3b. **Newsletter (Subscribe to FoRB Network).** The sign-up section sits above the footer on every page (`#newsletter`). To make it live:
    1. Create a free Mailchimp account and an Audience. Go to **Audience → Signup forms → Embedded form** and copy the URL from `<form action="…">`.
    2. Paste that URL into `NEWSLETTER_ACTION` in `../_build/build.py`, then rebuild. Visitors stay on the page and see a "check your inbox" message (Mailchimp sends a confirmation email).
-   3. Automatic emails: in Mailchimp, set up an automation that sends a **welcome email** to every new subscriber. Then send each Media Watch issue as a regular or scheduled campaign to the whole audience.
+   3. Automatic emails: in Mailchimp, set up an automation that sends a **welcome email** to every new subscriber. Then send each newsletter issue as a regular or scheduled campaign to the whole audience.
    4. Until a URL is set, the form runs in demo mode and sends nothing.
    Other services (Brevo, MailerLite and similar) also work. Paste their hosted form URL instead, and the form will open it in a new tab.
-4. **Photos.** Every photo except the logo was collected from third-party sites. **Replace them or license them** before going public.
+4. **Photos.** Every photo except the logo was collected from third-party sites. **Replace them or license them** before going public. The site now uses few photos on purpose (client request): heroes show the spinning logo instead.
+5. **Map.** The Myanmar map on the About page is an inline SVG drawn from Natural Earth boundaries (public domain).
 
 ## Editing header/footer
 The header, footer and `<head>` are repeated in each page. To change them on every page at once, edit `../_build/build.py`, edit the page bodies in `../_build/pages/`, then run:

@@ -91,28 +91,24 @@
     })(el);
   });
 
-  /* ---------- Home hero slideshow ---------- */
-  var show = document.querySelector(".hero-show");
-  if (show) {
-    var slides = show.querySelectorAll(".hero-show__slide");
-    var dots = show.querySelectorAll(".hero-show__dots button");
-    var caption = show.querySelector(".hero-show__caption");
-    var cur = 0, timer = null;
-    var go = function (n) {
-      cur = (n + slides.length) % slides.length;
-      slides.forEach(function (s, i) { s.classList.toggle("is-active", i === cur); });
-      dots.forEach(function (d, i) {
-        d.classList.remove("is-active");
-        if (i === cur) { void d.offsetWidth; d.classList.add("is-active"); } // restart fill animation
-        d.setAttribute("aria-pressed", String(i === cur));
+  /* ---------- Hero logo: gentle mouse parallax (glow, orbit and logo move at different depths) ---------- */
+  var heroLogo = document.querySelector(".hero-logo");
+  var heroSec = heroLogo && heroLogo.closest(".page-hero");
+  if (heroLogo && heroSec && !reduceMotion && window.matchMedia("(pointer: fine)").matches) {
+    var raf = 0, px = 0, py = 0;
+    heroSec.addEventListener("mousemove", function (e) {
+      var r = heroSec.getBoundingClientRect();
+      px = ((e.clientX - r.left) / r.width) * 2 - 1;
+      py = ((e.clientY - r.top) / r.height) * 2 - 1;
+      if (!raf) raf = requestAnimationFrame(function () {
+        raf = 0;
+        heroLogo.style.setProperty("--px", px.toFixed(3));
+        heroLogo.style.setProperty("--py", py.toFixed(3));
       });
-      if (caption) caption.textContent = slides[cur].getAttribute("data-caption") || "";
-    };
-    var play = function () { stop(); if (!reduceMotion) timer = setInterval(function () { go(cur + 1); }, 6000); };
-    var stop = function () { if (timer) clearInterval(timer); timer = null; };
-    dots.forEach(function (d, i) { d.addEventListener("click", function () { go(i); play(); }); });
-    document.addEventListener("visibilitychange", function () { if (document.hidden) stop(); else play(); });
-    go(0); play();
+    });
+    heroSec.addEventListener("mouseleave", function () {
+      heroLogo.style.setProperty("--px", 0); heroLogo.style.setProperty("--py", 0);
+    });
   }
 
   /* ---------- Entrance animation for every section ----------
@@ -237,7 +233,7 @@
     });
   });
 
-  /* ---------- "Read more" for long card text (only clamps on small screens, see CSS) ---------- */
+  /* ---------- "Read more" for long card text (clamped to 2 lines, see CSS) ---------- */
   document.querySelectorAll(".clampable").forEach(function (p, i) {
     var id = p.id || ("clamp-" + i); p.id = id;
     p.classList.add("is-clamped");

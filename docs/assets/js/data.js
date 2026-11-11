@@ -1,5 +1,6 @@
 /* ==========================================================================
-   FoRB violation data — EDIT THIS FILE to update the figures on the Home page.
+   FoRB violation data — EDIT THIS FILE to update the figures on the Home page
+   (number row) and the About page (#data: stats, townships and yearly charts).
 
    !!! ALL NUMBERS BELOW ARE PLACEHOLDERS !!!
    The client has not supplied figures yet. Replace every value with the
